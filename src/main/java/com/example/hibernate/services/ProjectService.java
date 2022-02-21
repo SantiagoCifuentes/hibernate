@@ -28,7 +28,7 @@ public class ProjectService {
     }
 
     public Project guardarProjecto(Project project) {
-        return projectRepo.save(project);//registro de usuarios
+        return projectRepo.save(project);//registro de proyectos
     }
 
     public boolean deleteById(Long id) {

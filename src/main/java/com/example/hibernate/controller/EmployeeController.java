@@ -20,8 +20,8 @@ public class EmployeeController
         return employeeService.buscarEmpleado();
     }
 
-    @GetMapping(path="/{employeeId}")
-    public Optional<Employee> obtenerEmployeePorId(@PathVariable Long employeeId) {
+    @GetMapping(path="/employee/{employeeId}")
+    public Optional<Employee> obtenerEmployeePorId(@PathVariable ("employeeId")  Long employeeId) {
         return employeeService.findById(employeeId);
     }
 

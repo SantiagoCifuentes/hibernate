@@ -18,7 +18,7 @@ public class RoleController
 
 
     @GetMapping
-    public List<Role> buscarProjectos() {
+    public List<Role> buscarProjectos() { //añadiendo roles
         return roleService.buscarRol();
     }
 
